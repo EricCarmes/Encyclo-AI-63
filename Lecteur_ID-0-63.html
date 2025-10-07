@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Smartbook - AudioBook</title>
+  <link rel="stylesheet" href="plyr.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <img src="ID-0-63-Couverture.jpg" alt="Couverture" style="width: 20%; height: auto; margin-bottom: 20px;">
+
+  <div class="logos">
+    <img src="PLANCHE-1a.jpg" alt="Logo AudioBook" style="width: 5%; height: auto; margin-bottom: 20px;">
+    <img src="Logo_resized.jpg" alt="Logo Encyclo-AI" style="width: 10%; height: auto; margin-bottom: 20px;">
+  </div>
+
+<!-- Bloc bouton Play + potentiomètre vitesse -->
+<div class="player-controls">
+  <!-- Gros bouton Play -->
+  <button id="bigPlayBtn" aria-label="Lire ou mettre en pause le livre audio">▶</button>
+
+  <!-- Bloc vitesse -->
+  <div id="speedControl">
+    <div class="speed-label">Vitesse</div>
+    <div class="speed-knob-wrapper">
+      <input type="range" id="speedKnob" min="0.9" max="1.1" step="0.05" value="1" orient="vertical">
+
+      <!-- Colonne repères alignés -->
+      <div id="speedLabels">
+        <span>++</span>
+        <span>+</span>
+        <span>=</span>
+        <span>-</span>
+        <span>--</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!-- Lecteur audio -->
+  <audio id="audioPlayer" controls></audio>
+
+  <!-- Playlist -->
+  <ul id="playlist">
+    <li><a href="Introduction.mp3" style="font-weight: bold;">INTRODUCTION - L'IMPACT ENVIRONNEMENTAL DU NUMÉRIQUE : UNE RÉFLEXION NÉCESSAIRE</a></li>
+
+    <li style="font-weight: bold;">Chapitre 1 - INTRODUCTION AUX DATA CENTERS : DÉFINITION ET COMPOSANTES</li>
+    <ul>
+      <li><a href="Chapitre1-1.mp3">1.1 - Qu'est-ce qu'un Data Center ?</a></li>
+      <li><a href="Chapitre1-2.mp3">1.2 - Les Composantes Clés des Data Centers</a></li>
+      <li><a href="Chapitre1-3.mp3">1.3 - Évolution Historique des Data Centers</a></li>
+    </ul>
+
+    <li style="font-weight: bold;">Chapitre 2 - IMPORTANCE DES DATA CENTERS DANS L'ÉCONOMIE NUMÉRIQUE</li>
+    <ul>
+      <li><a href="Chapitre2-1.mp3">2.1 - Rôle des Data Centers dans les Services Numériques</a></li>
+      <li><a href="Chapitre2-2.mp3">2.2 - Impact Économique des Data Centers</a></li>
+      <li><a href="Chapitre2-3.mp3">2.3 - Les Acteurs Majeurs du Secteur</a></li>
+    </ul>
+
+    <li style="font-weight: bold;">Chapitre 3 - L'EMPREINTE ÉCOLOGIQUE DES DATA CENTERS</li>
+    <ul>
+      <li><a href="Chapitre3-1.mp3">3.1 - Consommation Énergétique des Data Centers</a></li>
+      <li><a href="Chapitre3-2.mp3">3.2 - Émissions de CO2 Associées</a></li>
+      <li><a href="Chapitre3-3.mp3">3.3 - Consommation d'Eau pour le Refroidissement</a></li>
+    </ul>
+
+    <li style="font-weight: bold;">Chapitre 4 - CONSOMMATION ÉNERGÉTIQUE ET ÉMISSIONS DE CO2</li>
+    <ul>
+      <li><a href="Chapitre4-1.mp3">4.1 - Analyse des Sources d'Énergie</a></li>
+      <li><a href="Chapitre4-2.mp3">4.2 - Comparaison avec d'Autres Secteurs</a></li>
+      <li><a href="Chapitre4-3.mp3">4.3 - Tendances Futures en Consommation Énergétique</a></li>
+    </ul>
+
+    <li style="font-weight: bold;">Chapitre 5 - SOLUTIONS INNOVANTES POUR RÉDUIRE L'IMPACT ENVIRONNEMENTAL</li>
+    <ul>
+      <li><a href="Chapitre5-1.mp3">5.1 - Technologies de Refroidissement Efficaces</a></li>
+      <li><a href="Chapitre5-2.mp3">5.2 - Intégration des Énergies Renouvelables</a></li>
+      <li><a href="Chapitre5-3.mp3">5.3 - Optimisation de l'Efficacité Énergétique</a></li>
+    </ul>
+
+    <li style="font-weight: bold;">Chapitre 6 - INITIATIVES DES GRANDES ENTREPRISES POUR LA DURABILITÉ</li>
+    <ul>
+      <li><a href="Chapitre6-1.mp3">6.1 - Engagements des Leaders du Secteur</a></li>
+      <li><a href="Chapitre6-2.mp3">6.2 - Projets de Recherche et Développement</a></li>
+      <li><a href="Chapitre6-3.mp3">6.3 - Collaboration avec les Gouvernements et ONG</a></li>
+    </ul>
+
+    <li style="font-weight: bold;">Chapitre 7 - PERSPECTIVES ET RÉGLEMENTATIONS FUTURES</li>
+    <ul>
+      <li><a href="Chapitre7-1.mp3">7.1 - Réglementations Environnementales Actuelles</a></li>
+      <li><a href="Chapitre7-2.mp3">7.2 - Projections pour les Décennies à Venir</a></li>
+      <li><a href="Chapitre7-3.mp3">7.3 - Rôle de la Société Civile et des Consommateurs</a></li>
+    </ul>
+
+    <li style="font-weight: bold;">Chapitre 8 - RÉFLEXION SUR UN NUMÉRIQUE RESPONSABLE</li>
+    <ul>
+      <li><a href="Chapitre8-1.mp3">8.1 - Concilier Technologie et Environnement</a></li>
+      <li><a href="Chapitre8-2.mp3">8.2 - Sensibilisation et Éducation</a></li>
+      <li><a href="Chapitre8-3.mp3">8.3 - Vers une Économie Circulaire</a></li>
+    </ul>
+
+    <li><a href="Conclusion.mp3" style="font-weight: bold;">CONCLUSION - VERS UN NUMÉRIQUE DURABLE ET RESPONSABLE</a></li>
+  </ul>
+
+  <p><a href="ID-0-63-Annexes.pdf" target="_blank">📄 Consulter les annexes du livre</a></p>
+  <p><a href="mentions_legales.pdf">Mentions légales</a></p>
+
+  <script src="plyr.polyfilled.js"></script>
+  <script src="lecteur.js"></script>
+</body>
+</html>
